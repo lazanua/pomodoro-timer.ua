@@ -1,0 +1,56 @@
+.to-do__body{
+    position: absolute;
+    bottom: 40px;
+    left: 12px;
+    font-family: "Golos Text", sans-serif;
+background-color: rgba($color: #000000, $alpha: .3);
+min-height: 300px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+padding: 6px;
+opacity: 0;
+transition: opacity .3s ease-in;
+&.active{
+    opacity: 1;
+}
+}
+.to-do__task{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 6px;
+    span{
+        max-width: 100px;
+        word-wrap: break-word;
+    }
+}
+.task__btn{
+    padding: 2px;
+    border: 1px solid white;
+    background-color: rgba($color: #ffffff, $alpha: .4)
+}
+// .to-do__list{
+//     display: flex;
+//     flex-direction: column;
+//     gap: 100px;
+
+// }
+.to-do__btn{
+    font-weight: 600;
+    font-size: 30px;
+    border: 1px solid #a5a5a5;
+    padding: 2px;
+}
+#form{
+    display: flex;
+    flex-direction: column;
+}
+.to-do__btn{
+align-self: center;
+font-size: 18px;
+padding: 4px;
+margin-top: 10px;
+border-radius: 2px;
+}

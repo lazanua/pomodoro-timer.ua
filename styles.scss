@@ -1,0 +1,140 @@
+@import './reset';
+@import './to-do';
+
+
+.container{
+max-width: 1470px;
+padding: 0 15px;
+margin: 0 auto;
+position: relative;
+}
+.settings-body{
+  font-family: "Golos Text", sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+position: absolute;
+top: 50px;
+left: -530px;
+max-width: 500px;
+background-color: rgba($color: #000000, $alpha: .3);
+transition: left .3s ease-in;
+&.active{
+  left: 0;
+}
+option{
+    color: #000000;
+}
+#selectTheme{
+    background-color: rgba($color: #000000, $alpha: .1);;
+}
+
+}
+.settings-body{
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    
+    input{
+max-width: 45px;
+    }
+
+}
+body{
+    font-family: "Kosugi Maru", sans-serif;
+    background-image: url('./img/stars-bg.png');
+    background-position: center;
+    background-repeat: repeat;
+    background-size:auto;
+    color: rgb(255, 255, 255);
+}
+.settings-item-row{
+  display: flex;
+  gap: 90px;
+    justify-content: space-between;
+}
+
+
+.time-wrapper{
+padding-top: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+    font-size: 200px;
+}
+.buttons-row{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 200px;
+    max-width: 602px;
+    margin-top: 30px;
+
+}
+.row{
+    display: flex;
+    gap: 200px;
+    justify-content: space-between;
+}
+
+.hide {
+    display: none;
+  }
+  .show {
+    display: block;
+  }
+
+  #type, #countSessionEl{
+    font-size: 25px;
+  }
+  #countSessionEl{
+    margin-bottom: 20px;
+  }
+  .buttons{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 30px;
+  }
+  .buttons-wrapper{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    justify-content: space-between;
+  }
+  .info-btn{
+    font-size: 40px;
+    font-weight: 600;
+  }
+  .setting-color{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+  }
+  .file-input{
+    border: 1px solid rgb(188, 188, 188);
+    padding: 2px;
+  }
+  .sounds-off svg{
+margin-right: 12px;
+  }
+  .info-body{
+    font-family: "Golos Text", sans-serif;
+    position: absolute;
+    top: 46px;
+    right: 0px;
+    background-color: rgba($color: #000000, $alpha: .4);
+    padding: 8px;
+    max-width: 300px;
+    font-size: 18px;
+    transition: opacity .3s ease-in;
+    opacity: 0;
+    &.active{
+      opacity: 1;
+    }
+  }
+  #countSessionEl{
+  }
